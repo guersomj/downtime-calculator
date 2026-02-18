@@ -13,8 +13,8 @@ if mode == "Minutos → Horas decimales":
     minutes = st.number_input("Minutos de tiempo muerto", min_value=0.0, step=1.0, value=90.0)
     hours = minutes / 60.0
 
-    st.metric("Horas decimales", f"{hours:.4f}")
-    st.write(f"**{minutes:.0f} min** = **{hours:.4f} h**")
+    st.metric("Horas decimales", f"{hours:.0f}")
+    st.write(f"**{minutes:.0f} min** = **{hours:.0f} h**")
 
     # Atajos útiles
     st.caption("Tip: 15 min = 0.25 h • 30 min = 0.5 h • 45 min = 0.75 h • 90 min = 1.5 h")
@@ -24,7 +24,7 @@ else:
     minutes = hours * 60.0
 
     st.metric("Minutos", f"{minutes:.0f}")
-    st.write(f"**{hours:.4f} h** = **{minutes:.0f} min**")
+    st.write(f"**{hours:.0f} h** = **{minutes:.0f} min**")
 
 st.divider()
 
