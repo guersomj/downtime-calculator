@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(page_title="TIEMPO MUERTO", page_icon="⏱️", layout="centered")
 
-st.title("⏱️ Downtime Calculator")
+st.title("⏱️ TIEMPO MUERTO ")
 st.caption("Convierte minutos de tiempo muerto a horas decimales (y viceversa).")
 
 st.divider()
