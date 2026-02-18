@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="Downtime Calculator", page_icon="⏱️", layout="centered")
+st.set_page_config(page_title="TIEMPO MUERTO", page_icon="⏱️", layout="centered")
 
 st.title("⏱️ Downtime Calculator")
 st.caption("Convierte minutos de tiempo muerto a horas decimales (y viceversa).")
@@ -28,15 +28,4 @@ else:
 
 st.divider()
 
-st.subheader("Redondeo")
-round_to = st.selectbox("Redondear a (horas)", [ "Sin redondeo", "0.01 h", "0.05 h", "0.1 h" ])
-
-def round_hours(val: float, step: float) -> float:
-    return round(val / step) * step
-
-if round_to != "Sin redondeo" and mode == "Minutos → Horas decimales":
-    step = float(round_to.split()[0])
-    rounded = round_hours(hours, step)
-    st.info(f"Redondeado: **{rounded:.4f} h** (paso {step} h)")
-
-st.caption("Si esto te saca de apuros en planta, ya valió la pena. 😄")
+st.caption("Solo como referencia 😄")
