@@ -10,7 +10,7 @@ st.divider()
 mode = st.radio("Modo", ["Minutos → Horas decimales", "Horas decimales → Minutos"], horizontal=True)
 
 if mode == "Minutos → Horas decimales":
-    minutes = st.number_input("Minutos de tiempo muerto", min_value=0.0, step=1.0, value=90.0)
+    minutes = st.number_input("Minutos de tiempo muerto", min_value=0.0, step=1.0, value=0)
     hours = minutes / 60.0
 
     st.metric("Horas decimales", f"{hours:.1f}")
