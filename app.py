@@ -23,8 +23,8 @@ else:
     hours = st.number_input("Horas decimales de tiempo muerto", min_value=0.0, step=0.25, value=1.5)
     minutes = hours * 60.0
 
-    st.metric("Minutos", f"{minutes:.2f}")
-    st.write(f"**{hours:.4f} h** = **{minutes:.2f} min**")
+    st.metric("Minutos", f"{minutes:.0f}")
+    st.write(f"**{hours:.4f} h** = **{minutes:.0f} min**")
 
 st.divider()
 
