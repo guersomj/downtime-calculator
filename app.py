@@ -22,8 +22,8 @@ if mode == "Minutos → Horas decimales":
     )
     hours = minutes / 60.0
 
-    st.metric("Horas decimales", f"{hours:.1f}")
-    st.write(f"**{minutes} min** = **{hours:.1f} h**")
+    st.metric("Horas decimales", f"{hours:.2f}")
+    st.write(f"**{minutes} min** = **{hours:.2f} h**")
 
     st.caption("Tip: 15 min = 0.25 h • 30 min = 0.5 h • 45 min = 0.75 h • 90 min = 1.5 h")
 
